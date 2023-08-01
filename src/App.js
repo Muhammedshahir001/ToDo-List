@@ -19,8 +19,8 @@ function App() {
       const dayOfWeek = today.getDay();
       const dayName = daysOfWeek[dayOfWeek];
       function addTodo(){
-        const isDuplicate = todos.some((obj)=> obj.text === todo);
-        if (isDuplicate) {
+        const Duplicate = todos.some((obj)=> obj.text === todo);
+        if (Duplicate) {
           alert("Todo Already Exists!");
           return;
         }
@@ -73,7 +73,7 @@ function App() {
         </div>
         );
         }) }
-        <h4 style={{color:"white" , marginTop:"20px"}}>Active Status</h4>
+        <h4 style={{color:"greenyellow" , marginTop:"20px"}}>Active Status</h4>
 
         {todos.map((obj)=>{
           if(obj.status){
